@@ -1,0 +1,11 @@
+{
+    "name": "Instagram Unblocker",
+    "version": "1.0",
+    "description": "Unlock instagram bullshit if you're not logged in",
+    "permissions": ["declarativeContent", "webNavigation", "tabs"],
+    "content_scripts": [{
+        "matches": ["https://*.instagram.com/*"],
+        "js": ["contentScript.js"]
+    }],
+    "manifest_version": 2
+}
